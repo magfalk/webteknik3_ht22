@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE company_employees SYSTEM "employees.dtd">
+<company_employees>
+    <location type="Stockholm">
+        <description>
+            Vi erbjuder finfina lokaler i centrala delarna av Stockhom
+        </description>
+        <address>
+            <street>Kungsgatan 1
+            </street>
+            <postal_code>10001                
+            </postal_code>
+            <employee>
+                <name>
+                    <first_name>Sven
+                    </first_name>
+                    <last_name>Svensson
+                    </last_name>
+                </name>
+                <image url="" caption="Not yet uploaded" />
+            </employee>
+        </address>
+   </location>
+   <location type="Stockholm">
+    <description>Vi finns även i grannhuset
+    </description>
+    <address>
+        <street>Kungsgatan 3
+        </street>
+        <postal_code>10001                
+        </postal_code>
+        <employee>
+            <name>
+                <first_name>Anders
+                </first_name>
+                <last_name>Andersson
+                </last_name>
+            </name>
+            <image url="img/sthlm.jpg" caption="Stockholm" />
+        </employee>
+    </address>
+</location>   
+</company_employees>

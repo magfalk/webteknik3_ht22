@@ -1,0 +1,30 @@
+<!-- 
+company_employees
+    location+
+        attr: type(Stockholm|Göteborg|Malmö)
+        descripton
+        address
+            street
+            postal_code
+            employee+
+                name
+                    first_name
+                    last_name
+            image*
+                attr: url
+                attr: caption
+                    
+-->
+<!ELEMENT company_employees (location+)>
+    <!ELEMENT location (description, address+)>
+            <!ATTLIST location type (Stockholm|Göteborg|Malmö) #REQUIRED>
+        <!ELEMENT description (#PCDATA)>        
+        <!ELEMENT address (street, postal_code, employee+)>
+            <!ELEMENT street (#PCDATA)>
+            <!ELEMENT postal_code (#PCDATA)>
+            <!ELEMENT employee (name+, image*)>
+                <!ELEMENT name (first_name, last_name)>
+                    <!ELEMENT first_name (#PCDATA)>
+                    <!ELEMENT last_name (#PCDATA)>
+                <!ELEMENT image EMPTY>
+                    <!ATTLIST image url CDATA #REQUIRED caption CDATA #IMPLIED>
